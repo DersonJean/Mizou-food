@@ -1,0 +1,56 @@
+/* custom.css - Overrides for color palette of Ambiance (Haitian Food in Mexico) */
+
+:root {
+    --primary-color: #FF6B35;   /* Warm Haitian orange */
+    --secondary-color: #2E4052; /* Deep steel blue */
+    --accent-color: #FFD166;    /* Light golden */
+    --bg-color: #FAF3E0;        /* Soft neutral background */
+    --text-color: #1B1B1E;      /* Deep text color */
+    --highlight-color: #F4A261; /* Accent for buttons/links */
+}
+
+#header-text, .masthead-heading, .masthead-subheading {
+    color: #4B2E2B !important; /* Marrom escuro da paleta */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* melhora contraste */
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar, #mainNav {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--bg-color) !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: var(--accent-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--highlight-color) !important;
+    border-color: var(--highlight-color) !important;
+    color: var(--text-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+.section-heading, h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
