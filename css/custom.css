@@ -139,3 +139,34 @@ button[type="submit"]:hover {
     background-color: #FFE5C0;       /* hover mais claro */
     color: #C54B04 !important;       /* tom mais escuro no hover */
 }
+
+.contact-info-box {
+    background-color: #fff3e6;
+    color: #2d2d2d;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-info-box p {
+    margin: 10px 0;
+}
+
+.contact-info-box strong {
+    color: #e85d04; /* vibrant orange */
+}
+
+.contact-info-box a {
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info-box a:hover {
+    color: #e85d04;
+}

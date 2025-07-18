@@ -21,30 +21,45 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#page-top">
+                    <img src="images/logo.png" alt="Logo Mizou Food" style="height: 70px;" />
+                </a>
+
+                <!-- Botão toggle para dispositivos móveis -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
+
+                <!-- Itens do menu -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="#reservations">Réservations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Nos Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container text-center">
+            <div id="accueil" class="container text-center">
                 <div class="masthead-subheading">Bienvenue chez Mizou Food!</div>
                 <div class="masthead-heading text-uppercase">Goûtez aux saveurs haïtiennes au coeur du Mexique</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#menu">Découvrez notre menu</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">
+                    Découvrez notre menu
+                  </a>
+                  
             </div>
         </header>        
         <!-- Services-->
@@ -82,60 +97,200 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="Mizou Food">
+
+        <!-- Menu -->
+        <section class="page-section" id="menu">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Mizou Food</h2>
-                    <h3 class="section-subheading text-muted">Découvrez l’atmosphère unique de Mizou Food, un mélange chaleureux d’Haiti et du Mexique.</h3>
+                    <h2 class="section-heading text-uppercase">Notre Menu</h2>
+                    <h3 class="section-subheading text-muted">Découvrez nos spécialités haïtiennes et mexicaines.</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="images/restaurant_interior.jpg" alt="Intérieur du restaurant" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Intérieur chaleureux</div>
-                                <div class="portfolio-caption-subheading text-muted">Confort et décoration accueillante</div>
+                <div class="row text-center">
+
+                    <!-- Plat 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/griot.jpg" class="card-img-top" alt="Griot">
+                            <div class="card-body">
+                                <h5 class="card-title">Griot</h5>
+                                <p class="card-text text-muted">Porc mariné frit, servi avec pikliz et bananes pesées.</p>
+                                <p class="fw-bold">120 MXN</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="images/haitian_culture.jpg" alt="Culture haïtienne" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Culture haïtienne</div>
-                                <div class="portfolio-caption-subheading text-muted">Ambiance authentique et festive</div>
+
+                    <!-- Plat 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/diri-djon-djon.jpg" class="card-img-top" alt="Diri Djon Djon">
+                            <div class="card-body">
+                                <h5 class="card-title">Diri Djon Djon</h5>
+                                <p class="card-text text-muted">Riz aux champignons noirs haïtiens, servi avec poulet.</p>
+                                <p class="fw-bold">130 MXN</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="images/outdoor_seating.jpg" alt="Terrasse extérieure" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Terrasse extérieure</div>
-                                <div class="portfolio-caption-subheading text-muted">Détente en plein air avec vue</div>
+
+                    <!-- Plat 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/tacos-fusion.jpg" class="card-img-top" alt="Tacos fusion">
+                            <div class="card-body">
+                                <h5 class="card-title">Tacos Fusion</h5>
+                                <p class="card-text text-muted">Tortillas mexicaines garnies de saveurs haïtiennes.</p>
+                                <p class="fw-bold">110 MXN</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Boisson 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/jus-gingembre.jpg" class="card-img-top" alt="Jus de gingembre">
+                            <div class="card-body">
+                                <h5 class="card-title">Jus de Gingembre</h5>
+                                <p class="card-text text-muted">Boisson maison rafraîchissante et épicée.</p>
+                                <p class="fw-bold">40 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boisson 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/jus-citronnade.jpg" class="card-img-top" alt="Citronnade">
+                            <div class="card-body">
+                                <h5 class="card-title">Citronnade</h5>
+                                <p class="card-text text-muted">Fait maison, parfaite pour accompagner votre plat.</p>
+                                <p class="fw-bold">35 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dessert -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow">
+                            <img src="images/pudding.jpg" class="card-img-top" alt="Pouding à la noix de coco">
+                            <div class="card-body">
+                                <h5 class="card-title">Pouding Coco</h5>
+                                <p class="card-text text-muted">Dessert crémeux à base de noix de coco haïtienne.</p>
+                                <p class="fw-bold">50 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
+        
+        <!-- Mizou-Food-->
+<section class="page-section bg-light" id="Mizou Food">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Mizou Food</h2>
+            <h3 class="section-subheading text-muted">Découvrez l’atmosphère unique de Mizou Food, un mélange chaleureux d’Haiti et du Mexique.</h3>
+        </div>
+        <div class="row">
+            <!-- Intérieur chaleureux -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/restaurant_interior.jpg" alt="Intérieur du restaurant" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Intérieur chaleureux</div>
+                        <div class="portfolio-caption-subheading text-muted">Confort et décoration accueillante</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boissons maison -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/boisson-maison.jpg" alt="Boisson maison" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Boissons maison</div>
+                        <div class="portfolio-caption-subheading text-muted">Cocktails tropicaux et rafrâichissants</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Culture haïtienne -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/haitian_culture.jpg" alt="Culture haïtienne" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Culture haïtienne</div>
+                        <div class="portfolio-caption-subheading text-muted">Ambiance authentique et festive</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terrasse extérieure -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/outdoor_seating.jpg" alt="Terrasse extérieure" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Terrasse extérieure</div>
+                        <div class="portfolio-caption-subheading text-muted">Détente en plein air avec vue</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ambiance festive -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/ambiance_festive.jpg" alt="Ambiance festive" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Ambiance festive</div>
+                        <div class="portfolio-caption-subheading text-muted">Musique, danse et convivialité</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuisine fusion -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#ambianceModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/cuisine_fusion.jpg" alt="Cuisine fusion" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Cuisine fusion</div>
+                        <div class="portfolio-caption-subheading text-muted">Un mariage de saveurs haïtiennes et mexicaines</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         
         <!-- À propos -->
         <section class="page-section" id="about">
@@ -216,6 +371,27 @@
             </div>
         </section>
 
+        <!-- Réservations -->
+        <section id="reservations" class="page-section bg-light">
+            <div class="container text-center">
+            <h2 class="section-heading text-uppercase">Réservations</h2>
+            <p class="section-subheading text-muted">
+                Réservez votre table rapidement via WhatsApp ou contactez-nous par téléphone.
+            </p>
+        
+            <!-- CTA button (WhatsApp) -->
+            <a class="btn btn-primary mb-4" href="https://wa.me/52123456789" target="_blank">
+                Réserver via WhatsApp
+            </a>
+        
+            <!-- Reservation Info -->
+            <div class="mt-4">
+                <p><strong>🕒 Heures d'ouverture :</strong> Tous les jours de 11h00 à 22h00</p>
+                <p><strong>👥 Réservations pour groupes jusqu'à 8 personnes</strong></p>
+            </div>
+            </div>
+        </section>
+  
 
                 <!-- Contact -->
         <section class="page-section" id="contact">
@@ -265,11 +441,12 @@
                         <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Envoyer</button>
                     </div>
                 </form>
-                <div class="text-center mt-4">
-                    <p><strong>Adresse :</strong> 123 Rue de la Saveur, Mexico, Mexique</p>
-                    <p><strong>Téléphone :</strong> +52 55 1234 5678</p>
-                    <p><strong>Email :</strong> contact@mizoufood.mx</p>
-                </div>
+                <div class="text-center mt-4 contact-info-box p-4 rounded">
+                    <p><strong>📍 Adresse :</strong><br>123 Rue de la Saveur, Mexico, Mexique</p>
+                    <p><strong>📞 Téléphone :</strong><br><a href="tel:+525512345678" class="text-decoration-none text-dark">+52 55 1234 5678</a></p>
+                    <p><strong>📧 Email :</strong><br><a href="mailto:contact@mizoufood.mx" class="text-decoration-none text-dark">contact@mizoufood.mx</a></p>
+                  </div>
+                  
             </div>
         </section>
 
