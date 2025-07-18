@@ -1,25 +1,74 @@
-/* custom.css - Overrides for color palette of Ambiance (Haitian Food in Mexico) */
+/* custom.css - Estilo personalizado para Mizou Food (Cuisine haïtienne au Mexique) */
 
 :root {
-    --primary-color: #FF6B35;   /* Warm Haitian orange */
-    --secondary-color: #2E4052; /* Deep steel blue */
-    --accent-color: #FFD166;    /* Light golden */
-    --bg-color: #FAF3E0;        /* Soft neutral background */
-    --text-color: #1B1B1E;      /* Deep text color */
-    --highlight-color: #F4A261; /* Accent for buttons/links */
+    --primary-color: #FF6B00;     /* Laranja vibrante */
+    --secondary-color: #4C1D00;   /* Marrom terroso */
+    --accent-color: #FFD3A3;      /* Pêssego suave */
+    --highlight-color: #FFF3E0;   /* Bege quente */
+    --bg-color: #FFF9F3;          /* Fundo neutro claro */
+    --text-color: #1F1300;        /* Texto café escuro */
 }
 
-#header-text, .masthead-heading, .masthead-subheading {
-    color: #4B2E2B !important; /* Marrom escuro da paleta */
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* melhora contraste */
+/* === MASTHEAD COM IMAGEM === */
+header.masthead {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 10rem 0;
+    color: var(--bg-color);
 }
 
+header.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* escurece imagem para contraste */
+    z-index: 1;
+}
 
+header.masthead .container {
+    position: relative;
+    z-index: 2;
+}
+
+.masthead-heading, .masthead-subheading, #header-text {
+    color: var(--highlight-color) !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* === BASE === */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
+.section-heading, h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+.section-subheading {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === NAVEGAÇÃO === */
 .navbar, #mainNav {
     background-color: var(--primary-color) !important;
 }
@@ -28,29 +77,65 @@ body {
     color: var(--bg-color) !important;
 }
 
-.nav-link:hover, .navbar-brand:hover {
+.nav-link:hover, .navbar-brand:hover,
+.nav-link.active {
     color: var(--accent-color) !important;
+    font-weight: bold;
 }
 
+/* === BOTÕES === */
 .btn-primary {
     background-color: var(--highlight-color) !important;
     border-color: var(--highlight-color) !important;
-    color: var(--text-color) !important;
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
     background-color: var(--accent-color) !important;
     border-color: var(--accent-color) !important;
+    color: var(--bg-color) !important;
 }
 
-.section-heading, h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-color);
+/* === ÍCONES DOS SERVIÇOS === */
+.fa-stack-2x.text-primary {
+    color: var(--primary-color) !important;
 }
 
-a {
-    color: var(--primary-color);
+/* === CONTATO === */
+#contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 4rem 0;
 }
 
-a:hover {
-    color: var(--highlight-color);
+#contact input,
+#contact textarea {
+    background-color: #fff;
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+}
+
+#contact .form-control::placeholder {
+    color: #888;
+}
+
+/* Botões principais consistentes */
+.btn-primary,
+button[type="submit"] {
+    background-color: #FFF3E0;       /* tom claro de fundo */
+    color: #F25C05 !important;       /* laranja vibrante */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover {
+    background-color: #FFE5C0;       /* hover mais claro */
+    color: #C54B04 !important;       /* tom mais escuro no hover */
 }
