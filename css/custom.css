@@ -170,3 +170,13 @@ button[type="submit"]:hover {
 .contact-info-box a:hover {
     color: #e85d04;
 }
+
+.menu-image-circle {
+    width: 200px;     /* or any size you prefer */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;  /* center the image and add spacing below */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
